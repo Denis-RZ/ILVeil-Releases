@@ -2,6 +2,8 @@
 
 Public release repository for the `ILVeil` desktop application.
 
+ILVeil is a Windows desktop `.NET obfuscator` and `.NET protection` tool focused on managed assembly protection, Native AOT publishing workflows, and operator-friendly release operations.
+
 This repository is intentionally limited to:
 
 - signed release binaries and portable packages
@@ -21,6 +23,13 @@ It does not contain the private source code repository.
 - Native AOT publish flow
 - Custom IL layer with string encryption, safe rename, and rename-map output
 - activation and edition management built into the desktop UI
+
+## Target Use Cases
+
+- protect compiled `.NET` desktop applications before release
+- run a GUI-driven `.NET obfuscation` workflow on Windows
+- prepare `Native AOT` outputs and keep operational diagnostics usable
+- manage protection settings, activation, and builds from one desktop interface
 
 ## Screenshots
 

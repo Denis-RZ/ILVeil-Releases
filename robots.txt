@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://denis-rz.github.io/ILVeil-Releases/sitemap.xml

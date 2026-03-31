@@ -8,7 +8,7 @@
   <meta name="keywords" content="ILVeil, .NET obfuscator, dotnet obfuscator, .NET protection, Native AOT, assembly protection, C# obfuscation, WinForms protector">
   <meta name="robots" content="index, follow">
   <meta name="author" content="Denis-RZ">
-  <meta name="theme-color" content="#0d1526">
+  <meta name="theme-color" content="#f5f1ea">
   <link rel="canonical" href="https://denis-rz.github.io/ILVeil-Releases/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="ILVeil | Desktop .NET Obfuscator and Release Protection Workflow">
@@ -49,175 +49,200 @@
   </script>
 </head>
 <body>
-  <div class="site-shell">
+  <div class="page-shell">
     <header class="topbar">
       <a class="brand" href="./">
         <span class="brand__mark">IV</span>
-        <span class="brand__text">
+        <span class="brand__copy">
           <strong>ILVeil</strong>
-          <span>Windows Desktop Application</span>
+          <span>Desktop .NET Protection Workflow</span>
         </span>
       </a>
       <nav class="topnav" aria-label="Primary">
         <a href="#capabilities">Capabilities</a>
         <a href="#workflow">Workflow</a>
+        <a href="#screenshots">Screenshots</a>
         <a href="#editions">Editions</a>
         <a href="#download">Download</a>
-        <a href="#licensing">Licensing</a>
       </nav>
-      <a class="button button--ghost button--small" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0">GitHub Release</a>
+      <a class="button button--ghost button--small" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0">Release v1.0.0</a>
     </header>
 
     <main>
       <section class="hero">
-        <div class="hero__content">
-          <p class="eyebrow">Desktop .NET Protection Workflow</p>
-          <h1>Ship protected .NET releases from a desktop workflow that still feels operationally sane.</h1>
+        <div class="hero__copy">
+          <p class="eyebrow">Windows desktop application</p>
+          <h1>Enterprise-style .NET protection from a desktop workflow people can actually operate.</h1>
           <p class="lede">
-            ILVeil is a Windows desktop application for managed assembly protection, Native AOT publishing,
-            activation management, and stack-trace deobfuscation support. It is designed for teams that want
-            stronger release hardening without moving their operators into a CLI-only flow.
+            ILVeil combines managed protection, Native AOT publishing, activation management, and release-facing
+            diagnostics in a calmer desktop experience for teams shipping compiled .NET applications on Windows.
           </p>
-          <div class="pill-row">
-            <span class="pill">Managed assemblies</span>
-            <span class="pill">Native AOT</span>
-            <span class="pill">Activation and editions</span>
-            <span class="pill">Rename-map support</span>
-          </div>
           <div class="hero__actions">
-            <a class="button button--primary" href="./releases/ILVeil-win-x64-1.0.0.zip">Download v1.0.0</a>
-            <a class="button button--ghost" href="./releases/SHA256SUMS.txt">Verify SHA-256</a>
-            <a class="button button--subtle" href="https://github.com/Denis-RZ/ILVeil-Releases">Public Release Repo</a>
+            <a class="button button--primary" href="./releases/ILVeil-win-x64-1.0.0.zip">Download portable build</a>
+            <a class="button button--ghost" href="./releases/SHA256SUMS.txt">SHA-256 checksums</a>
+            <a class="button button--subtle" href="https://github.com/Denis-RZ/ILVeil-Releases">Public release repo</a>
           </div>
-          <div class="hero__meta">
-            <div>
+          <div class="hero__facts">
+            <article>
               <span class="label">Platform</span>
               <strong>Windows x64</strong>
-            </div>
-            <div>
-              <span class="label">Package</span>
-              <strong>Portable single-file build</strong>
-            </div>
-            <div>
-              <span class="label">Release channel</span>
-              <strong>GitHub Pages + GitHub Releases</strong>
-            </div>
+            </article>
+            <article>
+              <span class="label">Primary mode</span>
+              <strong>Desktop GUI</strong>
+            </article>
+            <article>
+              <span class="label">Distribution</span>
+              <strong>GitHub Releases + Pages</strong>
+            </article>
           </div>
         </div>
 
-        <aside class="hero__visual">
-          <div class="release-panel">
-            <div class="release-panel__header">
-              <p class="eyebrow">Current Release</p>
-              <span class="release-badge">v1.0.0</span>
+        <aside class="hero__aside">
+          <div class="hero-card">
+            <div class="hero-card__top">
+              <div>
+                <p class="eyebrow">Current release</p>
+                <h2>Public distribution without exposing the private source repository.</h2>
+              </div>
+              <span class="release-pill">v1.0.0</span>
             </div>
-            <h2>Corporate-style distribution without exposing the private source repository.</h2>
-            <p>
-              The public repository contains release assets, checksums, screenshots, and product documentation only.
-              The source repository remains private.
+            <p class="hero-card__copy">
+              The public repository contains release assets, checksums, screenshots, and documentation only.
+              The source code stays in the private repository.
             </p>
-            <ul class="release-list">
-              <li>Download package and checksums</li>
-              <li>Product screenshots and public docs</li>
-              <li>Licensing contact and release notes</li>
+            <ul class="feature-list">
+              <li>Portable download package and checksums</li>
+              <li>Product screenshots and release notes</li>
+              <li>Licensing contact for Pro and evaluation</li>
             </ul>
           </div>
-          <figure class="shot shot--hero">
+          <figure class="hero-shot">
             <img src="./assets/screenshots/overview-main.png" alt="ILVeil main window overview">
-            <figcaption>Main ILVeil desktop workflow</figcaption>
+            <figcaption>Main workflow overview</figcaption>
           </figure>
         </aside>
       </section>
 
-      <section class="signal-bar">
-        <article class="signal-card">
-          <span class="label">Managed protection</span>
-          <strong>Custom IL layer</strong>
-          <p>Compatibility-aware obfuscation, string protection, rename-map output, and preservation controls.</p>
+      <section class="value-strip">
+        <article class="value-card">
+          <span class="label">Protection</span>
+          <strong>Managed assembly workflow</strong>
+          <p>Custom IL protection, preservation controls, and release-safe operator flow.</p>
         </article>
-        <article class="signal-card">
-          <span class="label">Build strategy</span>
+        <article class="value-card">
+          <span class="label">Publishing</span>
           <strong>Native AOT aware</strong>
-          <p>Trim, strip, publish, and release-oriented desktop operations kept in one UI surface.</p>
+          <p>Native AOT, trim, strip, and packaging decisions coordinated from one desktop surface.</p>
         </article>
-        <article class="signal-card">
+        <article class="value-card">
           <span class="label">Operations</span>
           <strong>Supportable after release</strong>
-          <p>Activation, edition policy, stack-trace deobfuscation support, and protected-build tracking.</p>
+          <p>Activation, edition handling, protected builds, and stack-trace support stay visible.</p>
         </article>
       </section>
 
       <section class="section" id="capabilities">
-        <div class="section__intro">
+        <div class="section__header">
           <p class="eyebrow">Capabilities</p>
-          <h2>Focused on the release stage, not just on a raw obfuscation step.</h2>
+          <h2>Structured around release operations, not just around one obfuscation switch.</h2>
           <p class="section-copy">
             ILVeil is positioned as a desktop <strong>.NET obfuscator</strong> and <strong>.NET protection</strong> product,
-            but the value is broader than a single transform. It combines protection, publish flow, activation, and
-            supportability into one operator-facing workflow.
+            but the actual value is broader: protection, publish flow, licensing, and supportability are handled in a single workflow.
           </p>
         </div>
         <div class="grid grid--three">
           <article class="card">
-            <h3>Managed Assembly Protection</h3>
-            <p>Protect compiled .NET assemblies with a custom IL layer, safe rename behavior, rename-map output, and preservation rules that reduce compatibility fallout.</p>
+            <h3>Managed protection</h3>
+            <p>Protect compiled .NET assemblies with a custom IL layer, string protection, preservation logic, and rename-map output.</p>
           </article>
           <article class="card">
-            <h3>Native AOT Publishing</h3>
-            <p>Coordinate release builds with Native AOT, trim, and strip options from the same desktop application used for managed protection workflows.</p>
+            <h3>Native AOT publishing</h3>
+            <p>Coordinate release builds with Native AOT, trim, and strip options from the same desktop application.</p>
           </article>
           <article class="card">
-            <h3>Activation Management</h3>
-            <p>Use the built-in activation and edition UX for Free, Pro, and commercial licensing flows without sending users through ad hoc scripts.</p>
+            <h3>Activation management</h3>
+            <p>Use a built-in activation surface for Free, Pro, and signed commercial license flows.</p>
           </article>
           <article class="card">
-            <h3>Protected Builds View</h3>
-            <p>Track protected application outputs, registry state, launch targets, and support-relevant metadata inside a dedicated builds surface.</p>
+            <h3>Protected builds tracking</h3>
+            <p>Keep release outputs, launch targets, and protected application records visible after the build completes.</p>
           </article>
           <article class="card">
-            <h3>Support-Friendly Outputs</h3>
-            <p>Keep operational diagnostics viable with stack-trace deobfuscation support and rename-map awareness for production issue handling.</p>
+            <h3>Support-oriented outputs</h3>
+            <p>Preserve stack-trace deobfuscation support and release diagnostics needed for post-ship issue handling.</p>
           </article>
           <article class="card">
-            <h3>Desktop-first Workflow</h3>
-            <p>Built for operators and developers who want a GUI-driven release process instead of pushing every protection decision into terminal tooling.</p>
+            <h3>Desktop-first experience</h3>
+            <p>Designed for operators who want a GUI-driven process instead of putting every protection step behind a terminal flow.</p>
           </article>
         </div>
       </section>
 
-      <section class="section section--workflow" id="workflow">
-        <div class="section__intro">
+      <section class="section section--showcase">
+        <div class="showcase">
+          <div class="showcase__copy">
+            <p class="eyebrow">Why this layout exists</p>
+            <h2>A calmer product face for a security-heavy tool.</h2>
+            <p>
+              The public site is intentionally softer than the product category usually is. Instead of a loud “security dark theme,”
+              the page now leans into a light corporate palette, clearer content rhythm, and calmer decision points.
+            </p>
+            <div class="bullet-grid">
+              <article>
+                <strong>More corporate</strong>
+                <p>Cleaner grid, softer contrast, clearer hierarchy, and less “hacker tooling” mood.</p>
+              </article>
+              <article>
+                <strong>More legible</strong>
+                <p>Shorter hero copy, calmer cards, and more whitespace around product claims.</p>
+              </article>
+              <article>
+                <strong>More product-oriented</strong>
+                <p>The page frames ILVeil as a release workflow, not just as an obfuscation checkbox list.</p>
+              </article>
+            </div>
+          </div>
+          <figure class="showcase__shot">
+            <img src="./assets/screenshots/settings-custom-il.png" alt="ILVeil custom IL settings">
+            <figcaption>Custom IL settings and workflow controls</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="section__header">
           <p class="eyebrow">Workflow</p>
-          <h2>Designed around a practical release sequence.</h2>
+          <h2>One practical release sequence.</h2>
         </div>
         <div class="timeline">
           <article class="timeline__item">
             <span class="timeline__step">01</span>
             <h3>Select the target</h3>
-            <p>Choose a project, solution, DLL, EXE, or frontend build and keep the release context visible in one UI.</p>
+            <p>Choose a project, solution, DLL, EXE, or frontend build and keep release context visible from the start.</p>
           </article>
           <article class="timeline__item">
             <span class="timeline__step">02</span>
             <h3>Apply protection policy</h3>
-            <p>Set managed protection options, preservation controls, Native AOT targets, and packaging decisions.</p>
+            <p>Set managed protection options, preservation rules, Native AOT targets, and packaging decisions.</p>
           </article>
           <article class="timeline__item">
             <span class="timeline__step">03</span>
             <h3>Publish and validate</h3>
-            <p>Run the build pipeline, inspect logs, and keep post-protection visibility through build records and audits.</p>
+            <p>Run the build pipeline, inspect logs, and keep post-protection visibility through records and audits.</p>
           </article>
           <article class="timeline__item">
             <span class="timeline__step">04</span>
             <h3>Ship with supportability</h3>
-            <p>Use activation, edition rules, and stack-trace deobfuscation support as part of the production handoff.</p>
+            <p>Use edition policy, activation, and deobfuscation support as part of the production handoff.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="screenshots">
-        <div class="section__intro">
-          <p class="eyebrow">Interface</p>
-          <h2>Product views from the desktop application.</h2>
+        <div class="section__header">
+          <p class="eyebrow">Screenshots</p>
+          <h2>Desktop views from the product itself.</h2>
         </div>
         <div class="gallery">
           <figure class="shot">
@@ -225,7 +250,7 @@
             <figcaption>Main workflow</figcaption>
           </figure>
           <figure class="shot">
-            <img src="./assets/screenshots/settings-custom-il.png" alt="ILVeil Custom IL settings">
+            <img src="./assets/screenshots/settings-custom-il.png" alt="ILVeil custom IL settings">
             <figcaption>Custom IL settings</figcaption>
           </figure>
           <figure class="shot">
@@ -234,22 +259,22 @@
           </figure>
           <figure class="shot">
             <img src="./assets/screenshots/logs.png" alt="ILVeil build logs">
-            <figcaption>Build logs</figcaption>
+            <figcaption>Logs and runtime feedback</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="section section--editions" id="editions">
-        <div class="section__intro">
+      <section class="section" id="editions">
+        <div class="section__header">
           <p class="eyebrow">Editions</p>
-          <h2>Clear public positioning for Free and commercial usage.</h2>
+          <h2>Public-facing edition structure that reads clearly.</h2>
         </div>
         <div class="grid grid--three">
-          <article class="plan plan--muted">
+          <article class="plan">
             <p class="plan__label">Free</p>
             <h3>Good for evaluation and smaller protected outputs</h3>
-            <p>Includes the desktop UI, managed protection workflow, Native AOT path, and baseline release operations.</p>
-            <ul class="plan__list">
+            <p>Includes the desktop workflow, managed protection baseline, Native AOT path, and the public release experience.</p>
+            <ul class="feature-list feature-list--compact">
               <li>Desktop protection workflow</li>
               <li>Managed protection baseline</li>
               <li>Native AOT publish support</li>
@@ -259,21 +284,21 @@
           <article class="plan plan--featured">
             <p class="plan__label">Pro</p>
             <h3>Commercial desktop usage with fewer operational limits</h3>
-            <p>For normal paid usage, Pro removes the Free assembly cap and fits teams shipping protected releases commercially.</p>
-            <ul class="plan__list">
+            <p>For paid usage, Pro removes the Free managed assembly cap and supports normal commercial release workflows.</p>
+            <ul class="feature-list feature-list--compact">
               <li>Signed product-license flow</li>
               <li>Commercial release usage</li>
-              <li>No Free managed assembly cap</li>
+              <li>No Free assembly cap</li>
               <li>Evaluation and licensing by request</li>
             </ul>
           </article>
-          <article class="plan plan--muted">
+          <article class="plan">
             <p class="plan__label">Enterprise</p>
             <h3>Reserved for organization-level onboarding</h3>
-            <p>Use this path for larger teams that need direct licensing discussion, rollout planning, or broader commercial terms.</p>
-            <ul class="plan__list">
-              <li>Team and organization discussions</li>
-              <li>Commercial onboarding</li>
+            <p>Use this path for larger teams that want direct licensing discussion, rollout planning, or broader terms.</p>
+            <ul class="feature-list feature-list--compact">
+              <li>Team onboarding discussion</li>
+              <li>Commercial coordination</li>
               <li>Direct contact workflow</li>
               <li>Handled through support email</li>
             </ul>
@@ -281,17 +306,17 @@
         </div>
       </section>
 
-      <section class="section section--download" id="download">
-        <div class="download-card">
-          <div class="download-card__copy">
+      <section class="section" id="download">
+        <div class="download-banner">
+          <div class="download-banner__copy">
             <p class="eyebrow">Download</p>
             <h2>Portable release package for Windows x64</h2>
             <p>
-              The public repository contains only release binaries, checksums, screenshots, and public documentation.
+              This public repository contains release binaries, checksums, screenshots, and public documentation only.
               The private source code repository is not exposed here.
             </p>
           </div>
-          <div class="download-card__actions">
+          <div class="download-banner__links">
             <a class="download-link" href="./releases/ILVeil-win-x64-1.0.0.zip">ILVeil-win-x64-1.0.0.zip</a>
             <a class="download-link" href="./releases/SHA256SUMS.txt">SHA256SUMS.txt</a>
             <a class="download-link" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0">Release notes</a>
@@ -300,39 +325,39 @@
       </section>
 
       <section class="section section--faq">
-        <div class="section__intro">
+        <div class="section__header">
           <p class="eyebrow">FAQ</p>
-          <h2>Common questions about the public distribution model.</h2>
+          <h2>Public distribution model.</h2>
         </div>
-        <div class="faq-grid">
+        <div class="grid grid--three">
           <article class="card">
             <h3>Is the source code public?</h3>
-            <p>No. This public repository is only the release and product site. The source repository remains private.</p>
+            <p>No. This repository is only the public release site and release package host. The source repository remains private.</p>
           </article>
           <article class="card">
             <h3>Is this a CLI package?</h3>
-            <p>No. ILVeil is positioned here as a Windows desktop GUI application. Public distribution is via GitHub Releases and GitHub Pages.</p>
+            <p>No. ILVeil is presented here as a Windows desktop GUI application. Public delivery is through GitHub Releases and GitHub Pages.</p>
           </article>
           <article class="card">
-            <h3>Can GitHub Pages host a corporate-looking landing page?</h3>
-            <p>Yes. GitHub Pages can serve a polished static product site. The limitation is backend logic, not branding or layout quality.</p>
+            <h3>Can GitHub Pages look corporate?</h3>
+            <p>Yes. GitHub Pages can host a polished static product site. The limitation is backend logic, not visual brand quality.</p>
           </article>
         </div>
       </section>
 
-      <section class="section section--support" id="licensing">
-        <div class="support-panel">
+      <section class="section" id="licensing">
+        <div class="support-banner">
           <div>
             <p class="eyebrow">Licensing</p>
             <h2>Pro licensing and evaluation requests</h2>
-            <p class="support-copy">
+            <p class="section-copy">
               For commercial Pro licensing or evaluation requests, contact
               <a href="mailto:dengwebdev@gmail.com">dengwebdev@gmail.com</a>.
             </p>
           </div>
-          <div class="support-panel__meta">
-            <span class="label">Public repo</span>
-            <strong>Release assets and product docs only</strong>
+          <div class="support-banner__note">
+            <span class="label">Public repository</span>
+            <strong>Release assets and product documentation only</strong>
           </div>
         </div>
       </section>

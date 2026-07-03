@@ -2,13 +2,13 @@
 
 Windows desktop `.NET obfuscator` and release protection workflow for managed assemblies, Native AOT publishing, activation management, and post-release diagnostics.
 
-[Product Website](https://denis-rz.github.io/ILVeil-Releases/) | [Latest Release](https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0) | [Download Windows x64 Build](./releases/ILVeil-win-x64-1.0.0.zip)
+[Product Website](https://denis-rz.github.io/ILVeil-Releases/) | [Latest Release](https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.0.0) | [Download Windows x64 Build](./releases/ILVeil-win-x64-2.0.0.zip)
 
 ## Start Here
 
 - Open the product site: [ILVeil Website](https://denis-rz.github.io/ILVeil-Releases/)
-- Open the release page: [ILVeil v1.0.0](https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0)
-- Download the portable package: [ILVeil-win-x64-1.0.0.zip](./releases/ILVeil-win-x64-1.0.0.zip)
+- Open the release page: [ILVeil v2.0.0](https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.0.0)
+- Download the Windows x64 package: [ILVeil-win-x64-2.0.0.zip](./releases/ILVeil-win-x64-2.0.0.zip) (requires the [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0))
 - Verify integrity: [SHA256SUMS.txt](./releases/SHA256SUMS.txt)
 
 ## What This Public Repository Contains

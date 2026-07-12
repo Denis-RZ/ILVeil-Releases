@@ -1,0 +1,43 @@
+# ILVeil
+
+> Windows desktop .NET obfuscator and application-protection workflow for managed assemblies, Native AOT publishing, and post-release verification.
+
+ILVeil combines VM-based method protection, managed IL obfuscation, runtime guards and post-protection verification in one GUI-driven desktop workflow. An optional Application Guard SDK binds signed license capabilities to derived values, execution checkpoints and encrypted resources for applications that need more than a boolean feature flag.
+
+No protector, including ILVeil, makes client-side code impossible to reverse. ILVeil is designed to multiply analysis cost and remove easy bypass points while preserving application behavior.
+
+## Core capabilities
+
+- VM-based method protection: selected methods become custom bytecode behind a protected dispatcher (branching, switches, recursion; instance fields and call targets; void, value and reference returns)
+- Managed IL obfuscation: string encryption, symbol renaming, control-flow transforms, integer masking
+- Runtime resistance: anti-debug and integrity checks with explicit response policies
+- Post-protection verification: checks, application records and logs confirm the release still runs
+- Optional Application Guard SDK: signed capability leases, derived values, flow checkpoints, encrypted embedded resources
+
+## Usage modes
+
+- Binary Protection (default): ready-made DLL/EXE as input, no source integration required
+- Application Guard SDK (optional): requires source integration; does not automatically scan or understand your business logic — you choose what a signed capability can unlock
+
+## Requirements
+
+- Windows 10 or Windows 11, x64
+- .NET 9 Desktop Runtime to run the ILVeil desktop app
+
+## Current release
+
+- Version: 2.1.0
+- Release page: https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.1.0
+- Download: https://github.com/Denis-RZ/ILVeil-Releases/releases/download/v2.1.0/ILVeil-win-x64-2.1.0.zip
+- SHA-256: FBC1E49B169F808C86C21641007C703802D7B963C60CECB13DD7A1E991200988
+
+## Licensing
+
+Binary Protection and the base download are free. Some runtime-guard behavior is Pro-gated and no-ops silently on the Free tier instead of changing application behavior. Pro licensing and evaluation requests: dengwebdev@gmail.com
+
+## Pages
+
+- Product site: https://denis-rz.github.io/ILVeil-Releases/
+- FAQ: https://denis-rz.github.io/ILVeil-Releases/faq.html
+- Release notes: https://github.com/Denis-RZ/ILVeil-Releases/blob/main/release-notes.md
+- Source: private. This repository contains release binaries, documentation and the public site only.

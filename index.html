@@ -31,10 +31,10 @@
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Windows",
     "url": "https://denis-rz.github.io/ILVeil-Releases/",
-    "downloadUrl": "https://denis-rz.github.io/ILVeil-Releases/releases/ILVeil-win-x64-1.0.0.zip",
+    "downloadUrl": "https://denis-rz.github.io/ILVeil-Releases/releases/ILVeil-win-x64-2.0.0.zip",
     "image": "https://denis-rz.github.io/ILVeil-Releases/assets/screenshots/overview-main.png",
     "description": "Windows desktop application for .NET protection, managed obfuscation, Native AOT publishing, activation management, and stack-trace deobfuscation support.",
-    "softwareVersion": "1.0.0",
+    "softwareVersion": "2.0.0",
     "author": {
       "@type": "Person",
       "name": "Denis-RZ"
@@ -65,7 +65,7 @@
         <a href="#editions">Editions</a>
         <a href="#download">Download</a>
       </nav>
-      <a class="button button--ghost button--small" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0">Release v1.0.0</a>
+      <a class="button button--ghost button--small" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.0.0">Release v2.0.0</a>
     </header>
 
     <main>
@@ -78,7 +78,7 @@
             diagnostics in a calmer desktop experience for teams shipping compiled .NET applications on Windows.
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="./releases/ILVeil-win-x64-1.0.0.zip">Download portable build</a>
+            <a class="button button--primary" href="./releases/ILVeil-win-x64-2.0.0.zip">Download v2.0.0</a>
             <a class="button button--ghost" href="./releases/SHA256SUMS.txt">SHA-256 checksums</a>
             <a class="button button--subtle" href="https://github.com/Denis-RZ/ILVeil-Releases">Public release repo</a>
           </div>
@@ -105,7 +105,7 @@
                 <p class="eyebrow">Current release</p>
                 <h2>Public distribution without exposing the private source repository.</h2>
               </div>
-              <span class="release-pill">v1.0.0</span>
+              <span class="release-pill">v2.0.0</span>
             </div>
             <p class="hero-card__copy">
               The public repository contains release assets, checksums, screenshots, and documentation only.
@@ -113,6 +113,7 @@
             </p>
             <ul class="feature-list">
               <li>Portable download package and checksums</li>
+              <li>Application Guard SDK and license issuer</li>
               <li>Product screenshots and release notes</li>
               <li>Licensing contact for Pro and evaluation</li>
             </ul>
@@ -173,8 +174,8 @@
             <p>Preserve stack-trace deobfuscation support and release diagnostics needed for post-ship issue handling.</p>
           </article>
           <article class="card">
-            <h3>Desktop-first experience</h3>
-            <p>Designed for operators who want a GUI-driven process instead of putting every protection step behind a terminal flow.</p>
+            <h3>Application Guard SDK</h3>
+            <p>Optionally bind signed capabilities to derived values, flow checkpoints, and encrypted embedded resources when source integration is available.</p>
           </article>
         </div>
       </section>
@@ -182,24 +183,23 @@
       <section class="section section--showcase">
         <div class="showcase">
           <div class="showcase__copy">
-            <p class="eyebrow">Why this layout exists</p>
-            <h2>A calmer product face for a security-heavy tool.</h2>
+            <p class="eyebrow">Two protection levels</p>
+            <h2>Binary protection first, stronger source binding when needed.</h2>
             <p>
-              The public site is intentionally softer than the product category usually is. Instead of a loud “security dark theme,”
-              the page now leans into a light corporate palette, clearer content rhythm, and calmer decision points.
+              Ready-made DLL/EXE files can use the normal protection workflow without source changes. Application Guard is a separate advanced SDK path for license-derived values and encrypted resources tied to real feature flows.
             </p>
             <div class="bullet-grid">
               <article>
-                <strong>More corporate</strong>
-                <p>Cleaner grid, softer contrast, clearer hierarchy, and less “hacker tooling” mood.</p>
+                <strong>No mandatory SDK</strong>
+                <p>VM, renaming, strings, control flow, and runtime guards remain available for compiled applications.</p>
               </article>
               <article>
-                <strong>More legible</strong>
-                <p>Shorter hero copy, calmer cards, and more whitespace around product claims.</p>
+                <strong>Guided integration</strong>
+                <p>The desktop UI reports Not integrated, Incomplete, or Ready and exports a starter package with examples.</p>
               </article>
               <article>
-                <strong>More product-oriented</strong>
-                <p>The page frames ILVeil as a release workflow, not just as an obfuscation checkbox list.</p>
+                <strong>Honest boundary</strong>
+                <p>Guard strengthens source-integrated features; it does not claim to discover business logic automatically.</p>
               </article>
             </div>
           </div>
@@ -317,9 +317,9 @@
             </p>
           </div>
           <div class="download-banner__links">
-            <a class="download-link" href="./releases/ILVeil-win-x64-1.0.0.zip">ILVeil-win-x64-1.0.0.zip</a>
+            <a class="download-link" href="./releases/ILVeil-win-x64-2.0.0.zip">ILVeil-win-x64-2.0.0.zip</a>
             <a class="download-link" href="./releases/SHA256SUMS.txt">SHA256SUMS.txt</a>
-            <a class="download-link" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0">Release notes</a>
+            <a class="download-link" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.0.0">Release notes</a>
           </div>
         </div>
       </section>
@@ -339,8 +339,8 @@
             <p>No. ILVeil is presented here as a Windows desktop GUI application. Public delivery is through GitHub Releases and GitHub Pages.</p>
           </article>
           <article class="card">
-            <h3>Can GitHub Pages look corporate?</h3>
-            <p>Yes. GitHub Pages can host a polished static product site. The limitation is backend logic, not visual brand quality.</p>
+            <h3>Does Application Guard require source changes?</h3>
+            <p>Yes, for value and flow binding. It is optional: normal binary protection works on ready-made managed DLL/EXE files without Guard markers.</p>
           </article>
         </div>
       </section>
@@ -368,7 +368,7 @@
       <p>
         <a href="https://github.com/Denis-RZ/ILVeil-Releases">Public repository</a>
         <span>·</span>
-        <a href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v1.0.0">Release v1.0.0</a>
+        <a href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.0.0">Release v2.0.0</a>
       </p>
     </footer>
   </div>

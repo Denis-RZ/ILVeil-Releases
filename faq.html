@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ILVeil FAQ — .NET Obfuscation, Method Virtualization & Application Guard</title>
+  <meta name="description" content="Answers about ILVeil: source requirements, what it protects, method virtualization, Application Guard, licensing, performance impact and CI/CD support.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="ILVeil">
+  <meta name="theme-color" content="#12161c">
+  <link rel="canonical" href="https://denis-rz.github.io/ILVeil-Releases/faq.html">
+  <meta property="og:title" content="ILVeil FAQ — .NET Obfuscation, Method Virtualization & Application Guard">
+  <meta property="og:description" content="Source requirements, supported input, method virtualization, Application Guard, licensing, performance and CI/CD — answered directly.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://denis-rz.github.io/ILVeil-Releases/faq.html">
+  <meta property="og:site_name" content="ILVeil">
+  <meta property="og:image" content="https://denis-rz.github.io/ILVeil-Releases/assets/screenshots/overview-main.png">
+  <meta property="og:image:alt" content="ILVeil desktop .NET protection workflow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ILVeil FAQ — .NET Obfuscation, Method Virtualization & Application Guard">
+  <meta name="twitter:description" content="Common questions about ILVeil, answered directly — no marketing filler.">
+  <meta name="twitter:image" content="https://denis-rz.github.io/ILVeil-Releases/assets/screenshots/overview-main.png">
+  <link rel="icon" href="./assets/appicon.ico">
+  <link rel="stylesheet" href="./styles.css?v=20260712d">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What is ILVeil?","acceptedAnswer":{"@type":"Answer","text":"ILVeil is a Windows desktop tool that protects compiled .NET applications. It combines VM-based method protection, managed IL obfuscation, runtime guards and post-protection verification in one GUI-driven workflow, plus an optional Application Guard SDK for license-bound feature flows."}},
+    {"@type":"Question","name":"Does ILVeil require access to my source code?","acceptedAnswer":{"@type":"Answer","text":"No, for Binary Protection. It takes a ready-made DLL or EXE as input and applies VM protection, string encryption, symbol renaming, control-flow transforms and runtime guards directly, with no source integration required. Source integration is only needed if you choose the optional Application Guard SDK."}},
+    {"@type":"Question","name":"What can ILVeil protect?","acceptedAnswer":{"@type":"Answer","text":"ILVeil protects compiled managed .NET assemblies and accepts ready-made DLL/EXE files, projects and solutions. It can also coordinate a Native AOT publishing workflow; IL-based transforms are applied before Native AOT consumes the managed metadata. Running ILVeil itself requires Windows 10 or 11 and the .NET 9 Desktop Runtime."}},
+    {"@type":"Question","name":"What does method virtualization actually protect?","acceptedAnswer":{"@type":"Answer","text":"Selected methods are converted into custom bytecode executed through a protected dispatcher, with per-method mappings and hardened call targets. Supported shapes include branching, switches and recursion; instance fields and call targets; and void, value and reference returns. Methods it cannot safely transform fall back instead of being virtualized blindly."}},
+    {"@type":"Question","name":"What is Application Guard?","acceptedAnswer":{"@type":"Answer","text":"Application Guard is an optional SDK that requires source integration. It lets signed license capabilities influence derived values, checkpoint-bound execution flow and encrypted embedded resources unlocked only by valid flow state. It does not scan or understand your business logic automatically; you choose what a signed capability can unlock."}},
+    {"@type":"Question","name":"Can protected code still be reversed?","acceptedAnswer":{"@type":"Answer","text":"Yes. No client-side protector makes code impossible to reverse. ILVeil is designed to multiply analysis cost, remove easy bypass points and preserve application behavior across every layer, not to guarantee unbreakable protection."}},
+    {"@type":"Question","name":"What is the performance impact?","acceptedAnswer":{"@type":"Answer","text":"It depends on which layers you apply and how many methods you choose to virtualize. Rename, string encryption and control-flow transforms are one-time costs applied at protection time. VM-based method protection adds interpretation overhead only to the methods you select, so it is meant for sensitive logic rather than hot loops across an entire codebase."}},
+    {"@type":"Question","name":"Is ILVeil free?","acceptedAnswer":{"@type":"Answer","text":"The base download and Binary Protection workflow are free. Some advanced runtime-guard behavior is Pro-gated and no-ops silently on the Free tier instead of changing application behavior. Contact dengwebdev@gmail.com for Pro licensing or evaluation."}},
+    {"@type":"Question","name":"Does ILVeil run in CI/CD?","acceptedAnswer":{"@type":"Answer","text":"Not today. ILVeil is a GUI-driven Windows desktop workflow, and there is no documented headless or command-line mode for scripted pipelines yet. Protection runs are driven from the desktop app."}},
+    {"@type":"Question","name":"Does ILVeil support Native AOT?","acceptedAnswer":{"@type":"Answer","text":"Yes. Native AOT publishing is part of the workflow. Because obfuscation-style transforms can destroy PE metadata that Native AOT needs, ILVeil's pipeline is ordered around that constraint rather than layering a third-party obfuscator over an already-published AOT build."}}
+  ]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <header class="nav-wrap">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="./index.html#top"><span class="brand-mark">IV</span><span><strong>ILVeil</strong><small>.NET application protection</small></span></a>
+      <div class="nav-links">
+        <a href="./index.html#capabilities">Capabilities</a><a href="./index.html#modes">Usage modes</a><a href="./index.html#proof">Proof</a><a href="./index.html#gallery">Gallery</a>
+      </div>
+      <a class="button button-small button-outline" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.1.0">v2.1.0</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero blueprint">
+      <div class="shell">
+        <span class="kicker"><i></i>§ 00 — Questions, answered directly</span>
+        <h1>Frequently asked questions.</h1>
+        <p class="hero-lede">Straight answers about what ILVeil protects, what it requires, and what it doesn't promise. The limits are stated directly instead of being hidden behind marketing language.</p>
+      </div>
+    </section>
+
+    <section class="section paper">
+      <div class="shell">
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-q">What is ILVeil?</summary>
+            <div class="faq-a"><p>ILVeil is a Windows desktop tool that protects compiled .NET applications. It combines VM-based method protection, managed IL obfuscation, runtime guards and post-protection verification in one GUI-driven workflow, plus an optional Application Guard SDK for license-bound feature flows.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Does ILVeil require access to my source code?</summary>
+            <div class="faq-a"><p>No, for Binary Protection. It takes a ready-made DLL or EXE as input and applies VM protection, string encryption, symbol renaming, control-flow transforms and runtime guards directly — no source integration required.</p><p>Source integration is only needed if you choose the optional Application Guard SDK, to bind licensed features to derived values and flow checkpoints.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">What can ILVeil protect?</summary>
+            <div class="faq-a"><p>Compiled managed .NET assemblies: ready-made DLL/EXE files, projects and solutions. ILVeil can also coordinate a Native AOT publishing workflow; IL-based transforms are applied before Native AOT consumes the managed metadata.</p><p>Running ILVeil itself requires Windows 10 or 11 and the .NET 9 Desktop Runtime.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">What does method virtualization actually protect?</summary>
+            <div class="faq-a"><p>Selected methods are converted into custom bytecode executed through a protected dispatcher, with per-method mappings and hardened call targets. Supported shapes include branching, switches and recursion; instance fields and call targets; and void, value and reference returns.</p><p>Methods it can't safely transform fall back instead of being virtualized blindly.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">What is Application Guard?</summary>
+            <div class="faq-a"><p>An optional SDK that requires source integration. It lets signed license capabilities influence derived values, checkpoint-bound execution flow and encrypted embedded resources unlocked only by valid flow state.</p><p>It does not scan or understand your business logic automatically — you choose what a signed capability can unlock.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Can protected code still be reversed?</summary>
+            <div class="faq-a"><p>Yes. No client-side protector makes code impossible to reverse. ILVeil is designed to multiply analysis cost, remove easy bypass points and preserve application behavior across every layer — not to guarantee unbreakable protection.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">What is the performance impact?</summary>
+            <div class="faq-a"><p>It depends on which layers you apply and how many methods you choose to virtualize. Rename, string encryption and control-flow transforms are one-time costs applied at protection time.</p><p>VM-based method protection adds interpretation overhead only to the methods you select, so it's meant for sensitive logic rather than hot loops across an entire codebase. There's no universal benchmark published, because the impact is workload-dependent.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Is ILVeil free?</summary>
+            <div class="faq-a"><p>The base download and Binary Protection workflow are free. Some advanced runtime-guard behavior is Pro-gated and no-ops silently on the Free tier instead of changing application behavior.</p><p>Contact <a href="mailto:dengwebdev@gmail.com">dengwebdev@gmail.com</a> for Pro licensing or evaluation.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Does ILVeil run in CI/CD?</summary>
+            <div class="faq-a"><p>Not today. ILVeil is a GUI-driven Windows desktop workflow, and there's no documented headless or command-line mode for scripted pipelines yet. Protection runs are driven from the desktop app.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-q">Does ILVeil support Native AOT?</summary>
+            <div class="faq-a"><p>Yes. Native AOT publishing is part of the workflow. Because obfuscation-style transforms can destroy PE metadata that Native AOT needs, ILVeil's pipeline is ordered around that constraint rather than layering a third-party obfuscator over an already-published AOT build.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta shell" id="download">
+      <div>
+        <span class="kicker kicker-verify">§ 08 — Current release · v2.1.0</span>
+        <h2>Raise the cost of the next bypass.</h2>
+        <p>Self-protected Windows x64 build. Requires the .NET 9 Desktop Runtime.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="button button-light" href="https://github.com/Denis-RZ/ILVeil-Releases/releases/download/v2.1.0/ILVeil-win-x64-2.1.0.zip">Download ILVeil</a>
+        <a href="./releases/SHA256SUMS.txt">Verify checksum →</a>
+        <a href="mailto:dengwebdev@gmail.com">Licensing questions →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <a class="brand" href="./index.html#top"><span class="brand-mark">IV</span><span><strong>ILVeil</strong><small>Practical .NET protection</small></span></a>
+    <p>Source remains private. Public repository contains release assets and documentation.</p>
+    <div><a href="./index.html#top">Home</a><a href="https://github.com/Denis-RZ/ILVeil-Releases">GitHub</a><a href="mailto:dengwebdev@gmail.com">Licensing</a></div>
+  </footer>
+</body>
+</html>

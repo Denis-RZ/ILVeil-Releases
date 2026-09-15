@@ -43,6 +43,7 @@ It does **not** contain the private source code repository.
 - run a GUI-driven `.NET obfuscation` workflow on Windows
 - prepare `Native AOT` outputs and keep operational diagnostics usable
 - manage protection settings, activation, and builds from one desktop interface
+- protect licensing logic, proprietary algorithms, desktop software, game clients, and Native AOT releases
 
 ## Screenshots
 

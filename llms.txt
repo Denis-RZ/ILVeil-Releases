@@ -2,7 +2,7 @@
 
 > Windows desktop .NET obfuscator and application-protection workflow for managed assemblies, Native AOT publishing, and post-release verification.
 
-ILVeil combines VM-based method protection, managed IL obfuscation, runtime guards and post-protection verification in one GUI-driven desktop workflow. An optional Application Guard SDK binds signed license capabilities to derived values, execution checkpoints and encrypted resources for applications that need more than a boolean feature flag.
+ILVeil combines VM-based method protection, managed IL obfuscation, runtime guards and post-protection verification in one GUI-driven desktop workflow. An optional Application Guard SDK binds signed license capabilities to derived values, execution checkpoints and encrypted resources for applications that need more than a single feature flag.
 
 No protector, including ILVeil, makes client-side code impossible to reverse. ILVeil is designed to multiply analysis cost and remove easy bypass points while preserving application behavior.
 

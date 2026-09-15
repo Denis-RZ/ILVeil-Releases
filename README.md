@@ -2,14 +2,13 @@
 
 Windows desktop `.NET obfuscator` and release protection workflow for managed assemblies, Native AOT publishing, activation management, and post-release diagnostics.
 
-[Product Website](https://denis-rz.github.io/ILVeil-Releases/) | [Crackme Demo](https://denis-rz.github.io/ILVeil-Releases/crackme.html) | [Latest Release](https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.2.0) | [Download Windows x64 Build](./releases/ILVeil-win-x64-2.2.0.zip)
+[Product Website](https://denis-rz.github.io/ILVeil-Releases/) | [Crackme Demo](https://denis-rz.github.io/ILVeil-Releases/crackme.html)
 
 ## Start Here
 
 - Open the product site: [ILVeil Website](https://denis-rz.github.io/ILVeil-Releases/)
 - Try the protected Windows Crackme: [ILVeil Crackme Demo](https://denis-rz.github.io/ILVeil-Releases/crackme.html)
-- Open the release page: [ILVeil v2.2.0](https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.2.0)
-- Download the Windows x64 package: [ILVeil-win-x64-2.2.0.zip](./releases/ILVeil-win-x64-2.2.0.zip) (requires the [.NET 9 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/9.0))
+- Evaluation builds of the protector are provided after an initial technical discussion.
 - Verify integrity: [SHA256SUMS.txt](./releases/SHA256SUMS.txt)
 - Try the protected V2 crackme demo: [ILVeil-Crackme-V2.zip](./releases/ILVeil-Crackme-V2.zip)
 

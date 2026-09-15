@@ -46,8 +46,8 @@ It does **not** contain the private source code repository.
 
 ## Screenshots
 
-![Main Overview](./assets/screenshots/overview-main.png)
-![Custom IL Settings](./assets/screenshots/settings-custom-il.png)
+![Main Overview](./assets/screenshots/overview-main-v2.png)
+![Custom IL Settings](./assets/screenshots/settings-custom-il-v2.png)
 ![Protected Builds](./assets/screenshots/applications.png)
 ![Logs](./assets/screenshots/logs.png)
 

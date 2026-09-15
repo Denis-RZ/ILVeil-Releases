@@ -1,4 +1,19 @@
-# ILVeil v2.1.0
+# ILVeil v2.2.0
+
+## Native VM Runtime Variant
+
+- generated native runtime variants are specialized per protected deployment
+- deployment-bound key material uses a separate sidecar and keyed runtime cache
+- Native Capability Gate V2 binds the native call to the protected deployment
+- CLI supports `--vm-native-runtime-variant`, `--vm-native-capability-gate-v2`, and exact native method selection
+- crackme demonstration now combines managed VM hash validation with a load-bearing native envelope gate
+
+## Verification
+
+- Crackme tests: 17/17 passed
+- Native VM Runtime Variant smoke: 11/11 passed
+- protected crackme: valid serial accepted, invalid serial rejected, corrupted key material fails closed
+- public demo package: `releases/ILVeil-Crackme-V2.zip`
 
 ## Included
 

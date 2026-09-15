@@ -11,6 +11,8 @@ No protector, including ILVeil, makes client-side code impossible to reverse. IL
 - VM-based method protection: selected methods become custom bytecode behind a protected dispatcher (branching, switches, recursion; instance fields and call targets; void, value and reference returns)
 - Managed IL obfuscation: string encryption, symbol renaming, control-flow transforms, integer masking
 - Runtime resistance: anti-debug and integrity checks with explicit response policies
+- Native VM Runtime Variant: generated per-deployment native runtime, keyed sidecar material and Capability Gate V2
+- CLI Runtime Variant mode for scripted protection of selected static int/bool/void methods
 - Post-protection verification: checks, application records and logs confirm the release still runs
 - Optional Application Guard SDK: signed capability leases, derived values, flow checkpoints, encrypted embedded resources
 
@@ -26,10 +28,10 @@ No protector, including ILVeil, makes client-side code impossible to reverse. IL
 
 ## Current release
 
-- Version: 2.1.0
-- Release page: https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.1.0
-- Download: https://github.com/Denis-RZ/ILVeil-Releases/releases/download/v2.1.0/ILVeil-win-x64-2.1.0.zip
-- SHA-256: FBC1E49B169F808C86C21641007C703802D7B963C60CECB13DD7A1E991200988
+- Version: 2.2.0
+- Release page: https://github.com/Denis-RZ/ILVeil-Releases/releases/tag/v2.2.0
+- Download: https://github.com/Denis-RZ/ILVeil-Releases/releases/download/v2.2.0/ILVeil-win-x64-2.2.0.zip
+- SHA-256: 16C956F11C3A26978C7AAF9047C76FBF07E5ED2E810AB0A4A22C1F7AC44E0C79
 
 ## Licensing
 
